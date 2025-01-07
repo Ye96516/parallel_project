@@ -11,8 +11,18 @@ config_version=5
 [application]
 
 config/name="视差演示项目"
+run/main_scene="res://scenes/main/main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/always_on_top=true
+window/stretch/mode="viewport"
+
+[global_group]
+
+Player=""
 
 [rendering]
 

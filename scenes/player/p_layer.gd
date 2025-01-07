@@ -1,10 +1,13 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+@export var speed = 300.0
+@export var health:int=100
 const JUMP_VELOCITY = -400.0
 
-
+func _ready() -> void:
+	print(self.is_in_group("Player"))
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -18,8 +21,8 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = direction * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
