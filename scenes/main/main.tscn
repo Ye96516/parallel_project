@@ -23,7 +23,7 @@ repeat_size = Vector2(1152, 0)
 
 [node name="HillsLayer01" type="Sprite2D" parent="Parallax/Parallax2D"]
 position = Vector2(576, 325.5)
-scale = Vector2(2.25, 2.54297)
+scale = Vector2(5.25, 5.894)
 texture = ExtResource("1_48war")
 
 [node name="Parallax2D2" type="Parallax2D" parent="Parallax"]
@@ -32,7 +32,7 @@ repeat_size = Vector2(1152, 0)
 
 [node name="HillsLayer01" type="Sprite2D" parent="Parallax/Parallax2D2"]
 position = Vector2(576, 325.5)
-scale = Vector2(2.25, 2.54297)
+scale = Vector2(5.25, 5.894)
 texture = ExtResource("2_h4ovg")
 
 [node name="Parallax2D3" type="Parallax2D" parent="Parallax"]
@@ -41,7 +41,7 @@ repeat_size = Vector2(1152, 0)
 
 [node name="HillsLayer01" type="Sprite2D" parent="Parallax/Parallax2D3"]
 position = Vector2(576, 325.5)
-scale = Vector2(2.25, 2.54297)
+scale = Vector2(5.25, 5.894)
 texture = ExtResource("3_whhnq")
 
 [node name="Parallax2D4" type="Parallax2D" parent="Parallax"]
@@ -50,7 +50,7 @@ repeat_size = Vector2(1152, 0)
 
 [node name="HillsLayer01" type="Sprite2D" parent="Parallax/Parallax2D4"]
 position = Vector2(576, 325.5)
-scale = Vector2(2.25, 2.54297)
+scale = Vector2(5.25, 5.894)
 texture = ExtResource("4_kqxeu")
 
 [node name="Parallax2D5" type="Parallax2D" parent="Parallax"]
@@ -59,7 +59,7 @@ repeat_size = Vector2(1152, 0)
 
 [node name="HillsLayer01" type="Sprite2D" parent="Parallax/Parallax2D5"]
 position = Vector2(576, 325.5)
-scale = Vector2(2.25, 2.54297)
+scale = Vector2(5.25, 5.894)
 texture = ExtResource("5_f4n82")
 
 [node name="Parallax2D6" type="Parallax2D" parent="Parallax"]
@@ -68,16 +68,17 @@ repeat_size = Vector2(1152, 0)
 
 [node name="HillsLayer01" type="Sprite2D" parent="Parallax/Parallax2D6"]
 position = Vector2(576, 325.5)
-scale = Vector2(2.25, 2.54297)
+scale = Vector2(5.25, 5.894)
 texture = ExtResource("6_edp7u")
 
 [node name="Ground" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
-position = Vector2(264, 618)
+position = Vector2(313, 1002)
 shape = SubResource("WorldBoundaryShape2D_pkr4h")
 
 [node name="Player" parent="." instance=ExtResource("7_atjf7")]
+position = Vector2(264, 816)
 
 [node name="Decorations" type="Node" parent="."]
 

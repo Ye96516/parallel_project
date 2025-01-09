@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqw1l3m2n1cc2"]
+
+[ext_resource type="Script" path="res://scenes/test/draw_grid.gd" id="1_aemj6"]
+[ext_resource type="Script" path="res://scenes/test/flow_field_controller.gd" id="1_biad6"]
+[ext_resource type="Texture2D" uid="uid://jbdm7xya8p6a" path="res://icon.svg" id="2_ddu6w"]
+
+[node name="FlowField" type="Node2D"]
+script = ExtResource("1_biad6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(955, 544)
+scale = Vector2(16.9219, 10.9141)
+texture = ExtResource("2_ddu6w")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_aemj6")
+grid_size = Vector2i(40, 20)
+grid_color = Color(0.910018, 0.612908, 0.516601, 1)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+text = "3333"
+horizontal_alignment = 1
+vertical_alignment = 1

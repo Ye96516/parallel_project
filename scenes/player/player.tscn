@@ -20,4 +20,4 @@ texture = ExtResource("2_wax3h")
 shape = SubResource("CircleShape2D_4pyg8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-limit_bottom = 648
+limit_bottom = 1080
